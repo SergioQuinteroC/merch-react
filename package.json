@@ -1,0 +1,42 @@
+{
+  "name": "platzi-conf-merch",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write {*.js,src/**/*.{js,jsx}}",
+    "lint": "eslint \"**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.31.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "vite": "^4.0.0",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
+}
